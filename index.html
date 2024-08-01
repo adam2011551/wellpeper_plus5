@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellpeper Plus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lexend', sans-serif; /* استخدام خط Lexend للإنجليزية */
+            background-color: #808080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container {
+            width: 360px; /* عرض إطار يشبه تطبيق Android */
+            height: 640px; /* ارتفاع إطار يشبه تطبيق Android */
+            background: #5e1d70;
+            border-radius: 30px; /* حواف مستديرة للإطار */
+            padding: 20px;
+            position: relative;
+            overflow-y: auto; /* إضافة تمرير عمودي */
+            overflow-x: hidden; /* إخفاء التمرير الأفقي */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            background: #8f32ed; /* لون خلفية العنوان */
+            color: white;
+            font-size: 28px;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-family: 'Cairo', sans-serif; /* استخدام خط Cairo للعربية */
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            height: 100px; /* ارتفاع الصورة */
+            margin: 15px 0; /* زيادة المسافة بين الأزرار */
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #000; /* إضافة حدود سوداء حول الأزرار */
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: 'Lexend', sans-serif; /* استخدام خط Lexend للإنجليزية */
+        }
+        .button span {
+            font-family: 'Cairo', sans-serif; /* استخدام خط Cairo للعربية */
+        }
+        .button img {
+            width: 70px; /* عرض الصورة داخل الزر */
+            height: auto;
+            border-radius: 10px;
+            margin-right: 10px; /* مسافة بين الصورة والنص */
+        }
+        .anime-btn {
+            background-image: url('https://i.pinimg.com/474x/42/74/46/42744669be935164d4a0abcf88f32c0c.jpg');
+        }
+        .cars-btn {
+            background-image: url('https://i.pinimg.com/236x/22/e0/05/22e005c974c28b11e039fe5ea64f2ab0.jpg');
+        }
+        .legends-btn {
+            background-image: url('https://i.pinimg.com/236x/b1/ec/85/b1ec857cbc5fafee8f24f856562de272.jpg');
+        }
+        .cartoon-btn {
+            background-image: url('https://i.pinimg.com/236x/d7/bc/71/d7bc71612fb10bf57e0d056d741b3209.jpg');
+        }
+        .freefire-btn {
+            background-image: url('https://i.pinimg.com/474x/72/eb/64/72eb649053f3cd7dfc4a08aa74aa9fca.jpg');
+        }
+        .button:hover {
+            opacity: 0.8; /* تغيير الشفافية عند التمرير فوق الزر */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">Wellpeper Plus</div>
+        <a href="anime.html" class="button anime-btn">
+            <img src="https://i.pinimg.com/474x/42/74/46/42744669be935164d4a0abcf88f32c0c.jpg" alt="Anime Image">
+            <span>أنمي / Anime</span>
+        </a>
+        <a href="cars.html" class="button cars-btn">
+            <img src="https://i.pinimg.com/236x/22/e0/05/22e005c974c28b11e039fe5ea64f2ab0.jpg" alt="Cars Image">
+            <span>سيارات / Cars</span>
+        </a>
+        <a href="legends.html" class="button legends-btn">
+            <img src="https://i.pinimg.com/236x/b1/ec/85/b1ec857cbc5fafee8f24f856562de272.jpg" alt="Legends Image">
+            <span>أساطير / Legends</span>
+        </a>
+        <a href="cartoon.html" class="button cartoon-btn">
+            <img src="https://i.pinimg.com/236x/d7/bc/71/d7bc71612fb10bf57e0d056d741b3209.jpg" alt="Cartoon Image">
+            <span>كرتون / Cartoon</span>
+        </a>
+        <a href="freefire.html" class="button freefire-btn">
+            <img src="https://i.pinimg.com/474x/72/eb/64/72eb649053f3cd7dfc4a08aa74aa9fca.jpg" alt="Free Fire Image">
+            <span>فري فاير / Free Fire</span>
+        </a>
+    </div>
+</body>
+</html>
